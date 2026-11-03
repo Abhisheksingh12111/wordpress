@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-canvas: #0d131a;
+  --color-surface: #131b24;
+  --color-surface-hover: #18222e;
+  --color-surface-card: #151e28;
+  --color-surface-border: rgba(245, 158, 11, 0.15);
+  --color-amber-gold: #f59e0b;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0d131a;
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom glow utility for dark luxury aesthetic */
+.glow-amber-sm {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.15);
+}
+
+.glow-amber-md {
+  box-shadow: 0 0 45px -8px rgba(245, 158, 11, 0.22);
+}
+
+.glow-amber-lg {
+  box-shadow: 0 0 70px -12px rgba(245, 158, 11, 0.28);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d131a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

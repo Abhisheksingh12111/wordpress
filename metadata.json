@@ -1,0 +1,6 @@
+{
+  "name": "Aura Restaurant - WordPress Landing Page",
+  "description": "High-converting, responsive modern WordPress restaurant landing page with contactless QR ordering, table reservations, and WooCommerce-ready menu layout in deep charcoal and amber gold.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
